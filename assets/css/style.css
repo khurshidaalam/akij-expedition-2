@@ -294,7 +294,6 @@ header{
     background: white;
     z-index: 11111;
     align-items: center;
-    position: relative;
     top: 80px;
     }
 .mobile-menu{
@@ -451,6 +450,52 @@ header{
     justify-content: center;
     padding: 3px;
     /* margin-right: 5px; */
+}
+
+/* logo  */
+.main-logo-area{
+    width: 100%;
+    margin: auto;
+}
+.logo-area {
+    position: absolute;
+    left: calc(50% - 152px);
+    top: 0;
+    width: 304px;
+    transition: all 0.3s;
+}
+.logo-area .main-logo {
+    position: relative;
+    padding: 10px;
+}
+
+.logo-area .main-logo a img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.logo-area .main-logo::before {
+    content: "";
+    background: #fff;
+    width: calc(100% - 8px);
+    height: calc(100% - 66px);
+    position: absolute;
+    left: 4px;
+    bottom: -6px;
+    border-radius: 0 0 10px 10px;
+}
+.stick.logo-area {
+    width: 176px;
+    left: calc(50% - 88px);
+    position: absolute;
+}
+
+@media (max-width:600px) {
+    .logo-area{
+        width: 176px;
+        left: calc(50% - 88px);
+        z-index: 111;
+    }
 }
 
 /* sunmenu  */

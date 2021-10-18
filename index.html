@@ -42,6 +42,15 @@
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <div class="main-logo-area">
+                    <div class="logo-area">
+                    <div class="main-logo">
+                      <a href="https://www.akijexpeditions.com">
+                        <img src="https://www.akijexpeditions.com/wp-content/themes/akij/assets/img/main-menu.svg" alt="">
+                      </a>
+                    </div>
+                </div>
+                
                 <button class="navbar-toggler " id="mobile-toggle" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -116,7 +125,7 @@
                                     <h5>Akij Chamber (9th Floor) 73,Dilkusha C/A, Dhaka 1000</h5>
                                 </div>
                                 <div class="email d-block text-center col-12 col-sm-6">
-                                    <i class="fab fa-telegram-plane"></i>
+                                    <i class="fas fa-paper-plane"></i>
                                     <h5>info@akijexpeditions.com</h5>
                                 </div>
                                 <div class="phone d-block text-center">
@@ -168,6 +177,7 @@
 
                         </ul>
                     </div>
+                    
                     <div class="header-right d-none d-md-flex">
                         <ul class="navbar-right ">
 
@@ -2085,6 +2095,24 @@
         console.log("clicked");
         navTog.classList.add("cross");
     })
+</script>
+<script>
+    window.onscroll = function () { scrollFunction() };
+    var logo = document.querySelector(".logo-area")
+    function scrollFunction() {
+        if (window.innerWidth > 600) {
+
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                logo.classList.add("stick")
+            } else {
+                logo.classList.remove("stick")
+
+            }
+
+        } else {
+            logo.classList.remove("stick")
+        }
+    }
 </script>
 
     <!-- bootstrap js  -->
