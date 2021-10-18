@@ -1014,7 +1014,10 @@ color: #0D1954;
         flex-direction: column;
     }
 }
-
+div#v-pills-tabContent {
+    width: 100%;
+    overflow: hidden;
+}
 .all-package-sec-tab-nav {
     
     width: 390px;
