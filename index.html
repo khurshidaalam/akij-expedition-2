@@ -42,7 +42,7 @@
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler " id="mobile-toggle" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
@@ -2070,12 +2070,22 @@
 </footer>
 
 
+
+
+
     <!-- jquery  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
+<script>
+    var navTog = document.getElementById("mobile-toggle")
+    
+    navTog.addEventListener("click", function() {
+        console.log("clicked");
+        navTog.classList.add("cross");
+    })
+</script>
 
     <!-- bootstrap js  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"
@@ -2154,6 +2164,8 @@
         })
 
     </script>
+    
+
 
 </body>
 

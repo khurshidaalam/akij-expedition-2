@@ -236,27 +236,52 @@ header{
     height: 40px;
     transition: all 0.3s;
     }
+    .navbar-toggler span,.navbar-toggler.collapsed span {
+        width: 100%;
+        display: block;
+        height: 2px;
+        background: #fff;
+        margin: 5px 0;
+        transition: 0.3s;
+    }
+    .navbar-toggler span:first-child,.navbar-toggler.collapsed span:first-child {
+        transform: rotate(0deg);
+        position: relative;
+        top: 0;
+        transition: 0.3s;
+    }
+    .navbar-toggler span:nth-child(2),.navbar-toggler.collapsed span:nth-child(2){
+        display: block;
+        transition: 0.3s;
+    }
+    .navbar-toggler span:last-child,.navbar-toggler.collapsed span:last-child {
+        transform: rotate(0deg);
+        transition: 0.3s;
+    position: relative;
+    top: 0;
+    }
     .navbar-toggler:focus{
         outline: none;
         box-shadow: none !important;
         
     }
-    .navbar-toggler:focus span:first-child{
+    .cross span:first-child{
         transform: rotate(45deg);
         position: relative;
         top: 5px;
         transition: 0.3s;
     }
-    .navbar-toggler:focus span:nth-child(2){
+    .cross span:nth-child(2){
         display: none;
         transition: 0.3s;
     }
-    .navbar-toggler:focus span:last-child{
+    .cross span:last-child{
         transform: rotate(-45deg);
         transition: 0.3s;
     position: relative;
     top: -2px;
     }
+    
     .navbar-light .navbar-toggler {
         border: none !important;
     }
@@ -267,7 +292,6 @@ header{
     flex-basis: 100%;
     flex-grow: 1;
     background: white;
-    height: 90vh;
     z-index: 11111;
     align-items: center;
     position: relative;
@@ -338,14 +362,7 @@ header{
 .phone i{
     background-color: #2a3b8f;
 }
-    .navbar-toggler span {
-        width: 100%;
-        display: block;
-        height: 2px;
-        background: #fff;
-        margin: 5px 0;
-        transition: transform 0.3s;
-    }
+    
 }
 
 .header-left{
